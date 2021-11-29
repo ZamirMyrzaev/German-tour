@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+.mainContacts {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.mainContacts_mail {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainContacts_email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainContacts_email p {
+  margin-left: 10px;
+}
+
+.mainContacts_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainContacts_logo img {
+  margin-left: 10px;
+}
+
+.navbar {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(45deg, #6ad7ce 0%, #33d9de 50%, #002878 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1% 5%;
+  background-color: #e61c1c;
+  border-radius: 40px;
+}
+
+.navbar_text {
+  font-size: 2em;
+  margin: 0%;
+  font-family: 'Playfair Display', serif;
+  color: yellow;
+  text-align: center;
+  padding: 5px 20px;
+}
+
+.navbar_textTour {
+  font-size: 15px;
+  margin: 0;
+}
+
+.navbar_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 3.5em;
+  gap: 1.5em;
+}
+
+.navbar_textMenu {
+  color: white;
+}
+
+.navbar_verticalLine {
+  border-left: 1px solid white;
+}
+
+.navbar_blocks {
+  width: 6em;
+  text-align: center;
+}
+/*# sourceMappingURL=Navbar.css.map */

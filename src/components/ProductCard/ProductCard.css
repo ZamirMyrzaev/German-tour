@@ -1,0 +1,26 @@
+.cards_block {
+  width: 25rem;
+  height: 100%;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.cards_block_img {
+  width: 100%;
+  height: 20em;
+}
+
+.cards_block_heading {
+  background-color: darkgreen;
+  margin: 0;
+}
+
+.cards_block_description {
+  background-color: blue;
+  margin: 0;
+}
+
+.cards_block_price {
+  background-color: chocolate;
+}
+/*# sourceMappingURL=ProductCard.css.map */

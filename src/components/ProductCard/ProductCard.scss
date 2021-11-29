@@ -1,0 +1,23 @@
+.cards_block{
+    width: 25rem;
+    height: 100%;
+    // background-color: crimson;
+    word-wrap: break-word;
+    text-align: center;
+  
+    &_img{
+        width: 100%;
+        height: 20em;
+    }
+    &_heading{
+        background-color: darkgreen;
+        margin: 0;
+    }
+    &_description{
+        background-color: blue;
+        margin: 0;
+    }
+    &_price{
+        background-color: chocolate;
+    }
+}
