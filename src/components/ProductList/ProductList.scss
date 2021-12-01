@@ -1,8 +1,115 @@
-.main_cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 90%;
-    margin: 5% auto;
+body{
+    background-color: #f1f4fa;
+}
 
+.main{
+    background-color: #f1f4fa;
+    padding-top: 3%;
+    &_text {
+        font-size: 2em;
+        font-weight: bold;
+        color: #002878;
+        text-align: center;
+        @media all and (max-width: 900px) {
+            font-size: 1.5em;
+        }
+        @media all and (max-width: 600px) {
+            font-size: 1em;
+        }
+        @media all and (max-width: 425px) {
+            font-size: 0.6em;
+        }
+    }
+    &_search{
+        position: relative;
+        left: 75%;
+        height: 3%;
+        width: 12%;
+        border: 2px solid white;
+        box-shadow: 0 0 1em 4px gray;
+        border-radius: 20px;
+        @media all and (max-width: 900px) {
+            font-size: 8px;
+        }
+        @media all and (max-width: 425px) {
+            font-size: 6px;
+        }
+        @media all and (max-width: 320px) {
+            font-size: 5px;
+        }
+    }
+    &_cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 90%;
+        margin: auto;
+        margin-top: 3em;
+        @media all and (max-width: 900px) {
+            margin-top: 2em;
+            margin-bottom: 0;
+        }
+        @media all and (max-width: 425px) {
+            margin-top: 1em;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.paginationBttns{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding-bottom: 2em;
+    @media all and (max-width: 425px) {
+        padding-bottom: 1em;
+        padding-left: 10px;
+    }
+}
+
+.paginationBttns li{
+   padding: 0.3em 0.8em;
+   border: 1px solid white;
+   color: #002878;
+   cursor: pointer;
+   @media all and (max-width: 768px) {
+    padding: 0.2em 0.6em;
+    font-size: 13px;
+    }
+    @media all and (max-width: 425px) {
+    padding: 0.2em 0.6em;
+    font-size: 8px;
+    }
+}
+.servises{
+    display: flex;
+    justify-content: center;
+    &_block{
+        margin-left: 5%;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        border: 1px solid #002878;
+        box-shadow: 0 0 1em 4px #002878;
+        width: 20%;
+        height: 10em;
+        border-radius: 20px;
+        text-align: center;
+        color: #002878;
+        font-size: 1em;
+        font-weight: 500;
+        @media all and (max-width: 768px) {
+            height: 7em;
+        }
+        @media all and (max-width: 600px) {
+            height: 5em;
+            font-size: 10px;
+        }
+        @media all and (max-width: 425px) {
+            height: 5em;
+            font-size: 8px;
+        }
+        @media all and (max-width: 320px) {
+            font-size: 6px;
+        }
+    }
 }

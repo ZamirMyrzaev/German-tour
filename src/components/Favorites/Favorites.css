@@ -1,0 +1,14 @@
+.favorites{
+    width: 100%;
+}
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+}
+.favorites_content{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}

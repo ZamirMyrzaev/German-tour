@@ -65,12 +65,15 @@ const Navbar = () => {
                    <p className="navbar_textMenu">О нас</p> 
                 </div>
                 <div className="navbar_verticalLine"></div>
+               <Link to="/fav">
                <div className="navbar_blocks">
-                   <p className="navbar_textMenu">Мои<br/>кабинет</p>
-                </div>                         {email ? (
+                   <p className="navbar_textMenu">Избранное</p>
+                </div>   
+                </Link>                     
+                {email ? (
                             <Link to="/auth">
                                 <button
-                                    className="btn_logout"
+                                    className="btn_login"
                                     variant="contained"
                                     disableElevation
                                     onClick={handleLogout}

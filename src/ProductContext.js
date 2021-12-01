@@ -64,6 +64,7 @@ const ProductContextProvider = ({ children }) => {
         await axios.patch(`http://localhost:8000/products/${newDetails.id}`, newDetails)
     }
 
+ 
 
     return (
         <productContext.Provider value={{ 

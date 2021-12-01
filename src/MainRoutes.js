@@ -8,6 +8,7 @@ import EditProduct from './components/EditProduct/EditProduct';
 import Navbar from './components/Navbar/Navbar';
 import AuthContextProvider from './AuthContext';
 import Auth from './components/Auth/Auth';
+import Favorites from './components/Favorites/Favorites';
 
 const MainRoutes = () => {
     return (
@@ -21,6 +22,7 @@ const MainRoutes = () => {
                   <Route path="/details/:id" element={<ProductDetails/>} />
                   <Route path="/edit/:id" element={<EditProduct/>} />
                   <Route path="/auth" element={<Auth />} />
+                  <Route path='/fav' element={<Favorites/>}/>
                 </Routes>
             </BrowserRouter>
             </AuthContextProvider>

@@ -1,5 +1,11 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
-import fire from './Fire'
+import {
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
+  signOut,
+  onAuthStateChanged,
+} from "firebase/auth"
+import { auth } from "./fire";
 
 export const authContext = createContext();
 
@@ -27,61 +33,56 @@ const AuthContextProvider = ({ children }) => {
 
   const handleLogin = () => {
     clearErrors();
-    fire
-      .auth()
-      .signInWithEmailAndPassword(email, password)
-      .catch((err) => {
-        switch (err.code) {
-          case "auth/invalid-email":
-          case "auth/user-disabled":
-          case "auth/user-not-found":
-            setEmailError(err.message);
-            break;
-          case "auth/wrong-password":
-            setPasswordError(err.message);
-            break;
-          default:
-            return err.code;
-        }
-      });
+
+    signInWithEmailAndPassword(auth, email, password).catch((err) => {
+      switch (err.code) {
+        case "auth/invalid-email":
+        case "auth/user-disabled":
+        case "auth/user-not-found":
+          setEmailError(err.message);
+          break;
+        case "auth/wrong-password":
+          setPasswordError(err.message);
+          break;
+        default:
+          return err.code;
+      }
+    });
   };
 
   const handleSignUp = () => {
     clearErrors();
-    fire
-      .auth()
-      .createUserWithEmailAndPassword(email, password)
-      .catch((err) => {
-        switch (err.code) {
-          case "auth/email-already-in-use":
-          case "auth/invalid-email":
-            setEmailError(err.message);
-            break;
-          case "auth/weak-password":
-            setPasswordError(err.message);
-            break;
-        }
-      });
+    createUserWithEmailAndPassword(auth, email, password).catch((err) => {
+      switch (err.code) {
+        case "auth/email-already-in-use":
+        case "auth/invalid-email":
+          setEmailError(err.message);
+          break;
+        case "auth/weak-password":
+          setPasswordError(err.message);
+          break;
+      }
+    });
   };
 
   const handleLogout = () => {
-    fire.auth().signOut();
+    signOut(auth);
   };
 
-//   const authListener = () => {
-//     fire.auth().onAuthStateChanged((user) => {
-//       if (user) {
-//         clearInputs();
-//         setUser(user);
-//       } else {
-//         setUser("");
-//       }
-//     });
-//   };
+  const authListener = () => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        clearInputs();
+        setUser(user);
+      } else {
+        setUser("");
+      }
+    });
+  };
 
-//   useEffect(() => {
-//     authListener();
-//   }, []);
+  useEffect(() => {
+    authListener();
+  }, []);
 
   return (
     <authContext.Provider

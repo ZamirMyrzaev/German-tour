@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import ReactPaginate from 'react-paginate';
 import { Link } from 'react-router-dom';
 import { productContext } from '../../ProductContext';
+import FilterBrand from '../FilterBrand/FilterBrand';
 import history from '../helpers';
 import ProductCard from '../ProductCard/ProductCard';
 import "./ProductList.css"
@@ -39,27 +40,45 @@ const ProductList = () => {
     .map((item) => <ProductCard key={item.id} item={item} />)
 
     return (
-        <div className="main_cards">
+        <div className="main">
+            <p className="main_text">ПОПУЛЯРНЫЕ НАПРАВЛЕНИЯ ДЛЯ ТУРИЗМА</p>
             <input 
                 name="q"
                 type="search" 
-                className="search" 
+                className="main_search" 
                 onChange={handleValue}
                 placeholder="    Search..."
             />
-            {displayProducts}
-            <ReactPaginate
-                    previousLabel={'<'}
-                    nextLabel={'>'}
-                    pageCount={pageCount}
-                    onPageChange={changePage}
-                    containerClassName={'paginationBttns'}
-                    previousLabelClassName={'previousBttn'}
-                    nextLabelClassName={'nextBttn'}
-                    disabledClassName={'paginationDisabled'}
-                    activeClassName={'paginationActive'}
+            <div className="main_cards">
+                {displayProducts}
+            </div>
+                <ReactPaginate
+                        previousLabel={'<'}
+                        nextLabel={'>'}
+                        pageCount={pageCount}
+                        onPageChange={changePage}
+                        containerClassName={'paginationBttns'}
+                        previousLabelClassName={'Bttns'}
+                        nextLabelClassName={'Bttns'}
+                        disabledClassName={'Bttns'}
+                        activeClassName={'Bttns'}
                 />
+                 <FilterBrand />
+            <p className="main_text">НАШИ СЕРВИСЫ</p>
+         <div className="servises">
+            <div className="servises_block">
+                <span>Сопровождение <br/> Автоуслуги <br/> Переводчик </span>
+            </div>
+            <div className="servises_block">
+                <span>Сопровождение <br/> Автоуслуги <br/> Переводчик </span>
+            </div>
+            <div className="servises_block">
+                <span>Сопровождение <br/> Автоуслуги <br/> Переводчик </span>
+            </div>
+         </div>
+        
     </div>
+    
     );
 };
 

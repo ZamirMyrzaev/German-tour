@@ -4,6 +4,7 @@
     width: 100%;
     height: auto;
     display: flex;
+    background-color: #f1f4fa;
     justify-content: space-around;
     &_mail{
         width: 50%;
@@ -12,58 +13,190 @@
     }
     &_email {
         display: flex;
-        & p{
+        & p li{
           margin-left: 10px;  
+        }
+        @media all and (max-width: 900px) {
+            font-size: 10px;
+        }
+        @media all and (max-width: 600px) {
+            font-size: 8px;
+        }
+        @media all and (max-width: 425px) {
+            font-size: 6px;
+            margin-left: 5px;
+        }
+        @media all and (max-width: 320px) {
+            font-size: 5px;
+            margin-left: 3px;
+        }
+        & img{
+            width: 25px;
+            @media all and (max-width: 768px) {
+                width: 20px;
+            }
+            @media all and (max-width: 600px) {
+                width: 15px;
+            }
+            @media all and (max-width: 425px) {
+                width: 12px;
+            }
+            @media all and (max-width: 320px) {
+                width: 9px;
+            }
         }
     }
     &_logo{
         display: flex;
-        align-items: center;
+        width: 25px;
+        margin-right: 10%;
         & img{
-            margin-left: 10px;
+            padding-left: 20%;
+            @media all and (max-width: 768px) {
+            width: 20px;
+            }
+            @media all and (max-width: 425px) {
+            width: 15px;
+            }
+            @media all and (max-width: 320px) {
+                width: 13px;
+            }
         }
     }
+
 }
 
 .navbar{
     width: 100%;
     height: auto;
-    background-image: linear-gradient(45deg, #6ad7ce 0%, #33d9de 50%, #002878 100%);
+    background-color: #002878;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    opacity: 0.8;
     &_right{
         display: flex;
         align-items: center;
-        margin: 1% 5%;
-        background-color: rgb(230, 28, 28);
+        margin: 1% 0;
+        background-color: white;
         border-radius: 40px;
     }
     &_text{
         font-size: 2em;
         margin: 0%;
         font-family: 'Playfair Display', serif;
-        color: yellow;
+        color: #002878;
         text-align: center;
-        padding: 5px 20px;
+        padding: 5px 25px;
+        text-decoration: none;
+        @media all and (max-width: 900px) {
+              font-size: 1em;
+              padding: 3px 15px;
+          }
+        @media all and (max-width: 600px) {
+            font-size: 0.9em;
+            padding: 1px 10px;
+        }
+        @media all and (max-width: 430px) {
+            font-size: 0.7em;
+            padding: 1px 10px;
+        }
+        @media all and (max-width: 320px) {
+            font-size: 0.5em;
+            padding: 1px 5px;
+        }
     }
     &_textTour{
         font-size: 15px;
         margin: 0;
+        @media all and (max-width: 600px) {
+            font-size: 10px;
+        }
+        @media all and (max-width: 430px) {
+            font-size: 8px;
+        }
+        @media all and (max-width: 320px) {
+            font-size: 6px;
+        }
     }
     &_left{
         display: flex;
         margin-right: 3.5em;
         gap: 1.5em;
+        @media all and (max-width: 900px) {
+            margin-right: 2.5em;
+            gap: 0.5em;
+        }
+        @media all and (max-width: 600px) {
+            margin-right: 0.5em;
+        }
+        @media all and (max-width: 430px) {
+            margin-right: 0;
+        }
     }
     &_textMenu{
         color: white;
+        @media all and (max-width: 900px) {
+            font-size: 13px;
+        }
+        @media all and (max-width: 600px) {
+            font-size: 10px;
+        }
+        @media all and (max-width: 430px) {
+            font-size: 7px;
+        }
+        @media all and (max-width: 320px) {
+            font-size: 6px;
+        }
     }
     &_verticalLine {
         border-left: 1px solid white;
+        @media all and (max-width: 430px) {
+            display: none;
+        }
     }
     &_blocks{
         width: 6em;
         text-align: center;
+        @media all and (max-width: 900px) {
+            width: 5em;
+        }
+        @media all and (max-width: 600px) {
+            width: 3.5em;
+        }
+        @media all and (max-width: 430px) {
+            width: 2.5em;
+        }
+        @media all and (max-width: 320px) {
+            width: 2em;
+        }
     }
 }
+.btn_login{
+    background-color: white;
+    color: #002878;
+    font-size: 1em;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 30px;
+    margin-top: 30%;
+    margin-left: 30%;
+    @media all and (max-width: 900px) {
+        font-size: 0.8em;
+        margin-left: 10%;
+    }
+    @media all and (max-width: 600px) {
+        font-size: 0.6em;
+        margin-left: 0%;
+    }
+    @media all and (max-width: 430px) {
+        font-size: 0.4em;
+        padding: 3px 5px;
+    }
+    @media all and (max-width: 320px) {
+        font-size: 0.3em;
+        padding: 2px 3px;
+        margin-top: 10%;
+    }
+}
+

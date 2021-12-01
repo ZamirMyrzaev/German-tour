@@ -1,0 +1,47 @@
+.main_add{
+    background-color: #f1f4fa;
+    height: 600px;
+    @media all and (max-width: 900px) {
+        height: 400px;
+    }
+}
+
+.add{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    position: relative;
+    padding-top: 5em;
+    left: 35%;
+    @media all and (max-width: 770px) {
+        padding-top: 3em;
+        left: 30%;
+    }
+    @media all and (max-width: 430px) {
+        padding-top: 3em;
+        left: 20%;
+    }
+    &_input{
+        margin: 1em;
+        @media all and (max-width: 770px) {
+            width: 250px;
+        }
+        @media all and (max-width: 430px) {
+            width: 200px;
+            font-size: 8px;
+        }
+    }
+    &_btn{
+        position: relative;
+        left: 40%;
+        background-color: #002878;
+        padding: 2px 10px;
+        border: 1px solid white;
+        border-radius: 10%;
+        font-size: 1em;
+        color: white;
+        @media all and (max-width: 430px) {
+            font-size: .8em;            
+        }
+    }
+}

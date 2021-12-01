@@ -5,6 +5,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #f1f4fa;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -25,27 +26,98 @@
   display: flex;
 }
 
-.mainContacts_email p {
+.mainContacts_email p li {
   margin-left: 10px;
+}
+
+@media all and (max-width: 900px) {
+  .mainContacts_email {
+    font-size: 10px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .mainContacts_email {
+    font-size: 8px;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .mainContacts_email {
+    font-size: 6px;
+    margin-left: 5px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .mainContacts_email {
+    font-size: 5px;
+    margin-left: 3px;
+  }
+}
+
+.mainContacts_email img {
+  width: 25px;
+}
+
+@media all and (max-width: 768px) {
+  .mainContacts_email img {
+    width: 20px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .mainContacts_email img {
+    width: 15px;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .mainContacts_email img {
+    width: 12px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .mainContacts_email img {
+    width: 9px;
+  }
 }
 
 .mainContacts_logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 25px;
+  margin-right: 10%;
 }
 
 .mainContacts_logo img {
-  margin-left: 10px;
+  padding-left: 20%;
+}
+
+@media all and (max-width: 768px) {
+  .mainContacts_logo img {
+    width: 20px;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .mainContacts_logo img {
+    width: 15px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .mainContacts_logo img {
+    width: 13px;
+  }
 }
 
 .navbar {
   width: 100%;
   height: auto;
-  background-image: linear-gradient(45deg, #6ad7ce 0%, #33d9de 50%, #002878 100%);
+  background-color: #002878;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,6 +127,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  opacity: 0.8;
 }
 
 .navbar_right {
@@ -64,8 +137,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1% 5%;
-  background-color: #e61c1c;
+  margin: 1% 0;
+  background-color: white;
   border-radius: 40px;
 }
 
@@ -73,14 +146,61 @@
   font-size: 2em;
   margin: 0%;
   font-family: 'Playfair Display', serif;
-  color: yellow;
+  color: #002878;
   text-align: center;
-  padding: 5px 20px;
+  padding: 5px 25px;
+  text-decoration: none;
+}
+
+@media all and (max-width: 900px) {
+  .navbar_text {
+    font-size: 1em;
+    padding: 3px 15px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navbar_text {
+    font-size: 0.9em;
+    padding: 1px 10px;
+  }
+}
+
+@media all and (max-width: 430px) {
+  .navbar_text {
+    font-size: 0.7em;
+    padding: 1px 10px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .navbar_text {
+    font-size: 0.5em;
+    padding: 1px 5px;
+  }
 }
 
 .navbar_textTour {
   font-size: 15px;
   margin: 0;
+}
+
+@media all and (max-width: 600px) {
+  .navbar_textTour {
+    font-size: 10px;
+  }
+}
+
+@media all and (max-width: 430px) {
+  .navbar_textTour {
+    font-size: 8px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .navbar_textTour {
+    font-size: 6px;
+  }
 }
 
 .navbar_left {
@@ -91,16 +211,129 @@
   gap: 1.5em;
 }
 
+@media all and (max-width: 900px) {
+  .navbar_left {
+    margin-right: 2.5em;
+    gap: 0.5em;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navbar_left {
+    margin-right: 0.5em;
+  }
+}
+
+@media all and (max-width: 430px) {
+  .navbar_left {
+    margin-right: 0;
+  }
+}
+
 .navbar_textMenu {
   color: white;
+}
+
+@media all and (max-width: 900px) {
+  .navbar_textMenu {
+    font-size: 13px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navbar_textMenu {
+    font-size: 10px;
+  }
+}
+
+@media all and (max-width: 430px) {
+  .navbar_textMenu {
+    font-size: 7px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .navbar_textMenu {
+    font-size: 6px;
+  }
 }
 
 .navbar_verticalLine {
   border-left: 1px solid white;
 }
 
+@media all and (max-width: 430px) {
+  .navbar_verticalLine {
+    display: none;
+  }
+}
+
 .navbar_blocks {
   width: 6em;
   text-align: center;
+}
+
+@media all and (max-width: 900px) {
+  .navbar_blocks {
+    width: 5em;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navbar_blocks {
+    width: 3.5em;
+  }
+}
+
+@media all and (max-width: 430px) {
+  .navbar_blocks {
+    width: 2.5em;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .navbar_blocks {
+    width: 2em;
+  }
+}
+
+.btn_login {
+  background-color: white;
+  color: #002878;
+  font-size: 1em;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 30px;
+  margin-top: 30%;
+  margin-left: 30%;
+}
+
+@media all and (max-width: 900px) {
+  .btn_login {
+    font-size: 0.8em;
+    margin-left: 10%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .btn_login {
+    font-size: 0.6em;
+    margin-left: 0%;
+  }
+}
+
+@media all and (max-width: 430px) {
+  .btn_login {
+    font-size: 0.4em;
+    padding: 3px 5px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .btn_login {
+    font-size: 0.3em;
+    padding: 2px 3px;
+    margin-top: 10%;
+  }
 }
 /*# sourceMappingURL=Navbar.css.map */

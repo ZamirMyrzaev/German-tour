@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { productContext } from '../../ProductContext';
 import { Link } from 'react-router-dom';
+import "./AddProduct.css"
 
 
 const AddProduct = () => {
@@ -32,36 +33,42 @@ const AddProduct = () => {
 
 
     return (
-        <div>
+        <div className="main_add">
+        <div className="add">
             <input 
             type="text"
+            className="add_input"
             placeholder="img"
             value={img}
             onChange={(e) => setImg(e.target.value)}
             />
             <input 
             type="text"
+            className="add_input"
             placeholder="heading"
             value={heading}
             onChange={(e) => setHeading(e.target.value)}
             />
             <input 
             type="text"
+            className="add_input"
             placeholder="description"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             />
             <input 
             type="text"
+            className="add_input"
             placeholder="price"
             value={price}
             onChange={(e) => setPrice(e.target.value)}
             />
             <Link to="/">
-            <button onClick={handleAddProduct}>
+            <button className="add_btn" onClick={handleAddProduct}>
                 Save
             </button>
             </Link>
+        </div>
         </div>
     );
 };

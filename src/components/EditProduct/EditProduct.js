@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { productContext } from "../../ProductContext";
 
 
+
 const EditProduct = () => {
 
     const { detailEdit, saveEdit } = useContext(productContext);
@@ -47,11 +48,12 @@ const EditProduct = () => {
 
     return (
         <>
-            <div>
+            <div className="main_add">
                 {change ? 
-               <div>
+               <div className="add">
                 <input 
                       type="text" 
+                      className="add_input"
                       placeholder="Img URL"
                       value={change.img}
                       onChange={handleEditInput}
@@ -59,24 +61,27 @@ const EditProduct = () => {
                 <input 
                       type="text" 
                       placeholder="Heading"
+                      className="add_input"
                       value={change.heading}
                       onChange={handleEditInput2}
                       />
                 <input 
                       type="text" 
                       placeholder="Description"
+                      className="add_input"
                       value={change.description}
                       onChange={handleEditInput3}
                       />
                 <input 
                       type="text" 
                       placeholder="Price"
+                      className="add_input"
                       value={change.price}
                       onChange={handleEditInput4}
                       />
 
                  <Link to={`/details/${change.id}`}>
-                     <button onClick={() => saveEdit(change)}>Save</button>
+                     <button className="add_btn" onClick={() => saveEdit(change)}>Save</button>
                  </Link>
                 </div>
            : <h1>Loading</h1>}

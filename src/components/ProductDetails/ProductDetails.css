@@ -1,1 +1,202 @@
-/* No CSS *//*# sourceMappingURL=ProductDetails.css.map */
+.main_details {
+  background-color: #f1f4fa;
+}
+
+.details {
+  width: 70%;
+  height: auto;
+  margin: auto;
+}
+
+.details_img {
+  width: 70%;
+  margin-top: 7%;
+  margin-left: 15%;
+}
+
+.details_heading {
+  color: #002878;
+  text-align: center;
+  font-size: 2em;
+  margin: 0%;
+  font-weight: 500;
+}
+
+@media all and (max-width: 770px) {
+  .details_heading {
+    font-size: 1.5em;
+  }
+}
+
+@media all and (max-width: 430px) {
+  .details_heading {
+    font-size: 1.2em;
+  }
+}
+
+@media all and (max-width: 325px) {
+  .details_heading {
+    font-size: 1em;
+  }
+}
+
+.details_description {
+  color: #002878;
+  text-align: center;
+  font-size: 1em;
+  margin-top: 1%;
+  font-weight: 500;
+}
+
+@media all and (max-width: 770px) {
+  .details_description {
+    font-size: .8em;
+  }
+}
+
+@media all and (max-width: 430px) {
+  .details_description {
+    font-size: .6em;
+  }
+}
+
+@media all and (max-width: 325px) {
+  .details_description {
+    font-size: .4em;
+  }
+}
+
+.details_price {
+  color: #002878;
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 1%;
+  font-weight: 500;
+}
+
+@media all and (max-width: 770px) {
+  .details_price {
+    font-size: 1em;
+  }
+}
+
+@media all and (max-width: 325px) {
+  .details_price {
+    font-size: .6em;
+  }
+}
+
+.details_coment {
+  color: #002878;
+  text-align: center;
+  font-size: 1em;
+  margin-top: 1%;
+  font-weight: 500;
+}
+
+.btn_10 {
+  background-color: #002878;
+  padding: 10px 20px;
+  position: relative;
+  border: 1px solid white;
+  border-radius: 10%;
+  left: 41%;
+  top: 80px;
+  font-size: 1em;
+  color: white;
+}
+
+@media all and (max-width: 430px) {
+  .btn_10 {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+}
+
+.input_comment {
+  position: relative;
+  left: 27%;
+}
+
+@media all and (max-width: 900px) {
+  .input_comment {
+    left: 15%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .input_comment {
+    left: 0%;
+  }
+}
+
+@media all and (max-width: 430px) {
+  .input_comment {
+    width: 20%;
+    height: 10px;
+    left: 10%;
+  }
+}
+
+@media all and (max-width: 325px) {
+  .input_comment {
+    height: 8px;
+    left: 0;
+  }
+}
+
+.btn_11 {
+  background-color: #002878;
+  padding: 3px 10px;
+  position: relative;
+  border: 1px solid white;
+  border-radius: 10%;
+  left: 27%;
+  font-size: 1em;
+  color: white;
+}
+
+@media all and (max-width: 900px) {
+  .btn_11 {
+    left: 15%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .btn_11 {
+    left: 0%;
+  }
+}
+
+@media all and (max-width: 430px) {
+  .btn_11 {
+    width: 15%;
+    height: 20px;
+    left: 10%;
+    font-size: 10px;
+  }
+}
+
+@media all and (max-width: 325px) {
+  .btn_11 {
+    width: 20%;
+    height: 15px;
+    left: 0;
+    font-size: 8px;
+  }
+}
+
+.comments {
+  color: red;
+  text-align: center;
+  font-size: 1em;
+  margin-top: 1%;
+  font-weight: 500;
+}
+
+@media all and (max-width: 600px) {
+  .comments {
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=ProductDetails.css.map */
